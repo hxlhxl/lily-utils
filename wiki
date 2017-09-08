@@ -1,0 +1,30 @@
+# 如何给PYTHON打包
+ref: https://packaging.python.org/tutorials/distributing-packages/
+1. 目录结构
+.
+└── lily-utils
+    ├── LICENSE
+    ├── lilyutils
+    │   ├── api.py
+    │   └── __init__.py
+    ├── README
+    ├── requirements.txt
+    ├── setup.py
+    └── wiki
+
+2. 必要条件
+  a、pypi.python.org注册账号
+  b、~/.pypirc
+  c、pip install twine
+
+3. 写setup.py文件
+ref: https://docs.python.org/2/distutils/setupscript.html
+
+4. 打包
+python setup.py bdist_wheel --universal
+
+5. 上传
+twine upload dist/*
+
+6. 测试
+pip install lilyutils
