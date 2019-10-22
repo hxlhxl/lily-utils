@@ -15,7 +15,7 @@ setup(
         'Programming Language :: Python :: 2.7',
       ],
     license = 'MIT License',
-    install_requires = ['requests==2.17.3'],
+    install_requires = ['requests==2.20.0'],
  
     author = 'hxlhxl',
     author_email = 'huaxiongcool@gmail.com',
